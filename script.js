@@ -2,17 +2,19 @@ function Quizz(validate,answer,answer_place,correct_answer){
     let validate_n = document.getElementById(validate)
     let answer_n = document.getElementById(answer)
     let answer_place_n = document.getElementById(answer_place)
-    validate_n.addEventListener('click', function(){
-    if (answer_n.value == correct_answer){
-        answer_place_n.innerHTML = 'Bonne réponse!'
-        answer_place_n.style.color = 'green'
+    if (validate_n){
+        validate_n.addEventListener('click', function(){
+        if (answer_n.value == correct_answer){
+            answer_place_n.innerHTML = 'Bonne réponse!'
+            answer_place_n.style.color = 'green'
+        }
+        else {
+            answer_place_n.innerHTML = 'Faux!'
+            answer_place_n.style.color = 'red'
+        }
+        
+        })
     }
-    else {
-        answer_place_n.innerHTML = 'Faux!'
-        answer_place_n.style.color = 'red'
-    }
-    
-    })
 }
 
 
