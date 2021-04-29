@@ -5,6 +5,7 @@ body {
     background-image: url('images/jsbg.jpg');
     background-attachment: fixed;
     background-size: cover;
+    font-family:sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,7 +20,7 @@ section > article:nth-of-type(odd){
     background-color:rgba(128, 128, 128, 0.74);
 }
 section > article:nth-of-type(even){
-    background-color:rgba(204, 204, 204, 0.74);
+    background-color:rgba(98, 98, 98, 0.74);
 }
 
 /* header {
