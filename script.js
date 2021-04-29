@@ -21,7 +21,8 @@ function Quizz(validate,answer,answer_place,correct_answer){
 
 social_media_list = document.getElementsByClassName('social_media')
 for(button of social_media_list){
-    button.addEventListener('click',function(){
+    button.addEventListener('click',function(event){
+        event.preventDefault()
         alert("Ce raccourci n'est actuellement pas valide, veuillez nous excuser pour la gêne occasioné")
     })
 }
