@@ -12,10 +12,10 @@ p, button{
 strong{
     background: orange;
 }
-section > article:nth-child(2n){
+section > article:nth-of-type(odd){
     background-color:rgba(128, 128, 128, 0.74);
 }
-section > article:nth-child(2n+1){
+section > article:nth-of-type(even){
     background-color:rgba(204, 204, 204, 0.74);
 }
 
@@ -27,7 +27,6 @@ header > h1 {
     text-align:center;
 }
 nav{
-
     display:flex;
     flex-direction: column;
     grid-column: 1;
