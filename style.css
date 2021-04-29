@@ -205,6 +205,9 @@ section > article:hover p {
 .function{
     color:#2566CB;
 }
+.text {
+    color:#C3915B;
+}
 article {
     padding: 5px;
     margin: 5px;
@@ -217,4 +220,31 @@ article {
     article > div > img {
         max-width: 100%;
     }
+}
+
+.solve{
+    width:15px;
+}
+#solve_4, #solve_5{
+    width:40px;
+}
+
+.answer {
+    text-align: center;
+}
+
+.numeric {
+    color:#B5CE89;
+}
+.call{
+    color:#D0DC8B;
+}
+
+.button {
+    text-align:center;
+}
+.button > button {
+    background-color:#222222;
+    color:#f5f5f5;
+    border-radius: 20px;
 }
