@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset='utf-8' />
+        <title>Contact | Adrar Numérique</title>
+        <link rel='stylesheet' href='style.css' />
+        <link rel='stylesheet' href='js.css' />
+        <script src="https://kit.fontawesome.com/51869bbcae.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <img src="images/index.png" alt="adrar" class="pic" /> 
+        <header id='header'>
+            <div>
+                <img src="images/banner.png" alt="Bannière Adrar">
+            </div>
+                <!-- <strong>Bienvenue sur le site du pôle numérique de L'adrar</strong> -->
+        </header>
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="images/home.svg" alt="Accueil" /></a>
+                    </li>
+                    <li>
+                        <a href="html.html"><img src="images/html5c.svg" alt="Logo HTML5" /></a>
+                    </li>
+                    <li>
+                        <a href="css.html"><img src="images/css_color.svg" alt="Logo CSS" /></a>
+                    </li>
+                    <li>
+                        <a href="js.html"><img src="images/js.svg" alt="Logo JavaScript" /></a>
+                    </li>
+                    <li>
+                        <a href="api.html"><img src="images/api.svg" alt="Les API" /></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><img src="images/contact.svg" alt="Nous contacter" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <article>
+                <h2 id="js_title">Nous contacter / Postuler</h2>
+                <form method="POST" action="mon.php">
+                    <label class="font" for="prenom">Prénom:</label>
+                    <input type="text" name="prenom" placeholder="Entrez votre prénom" maxlength="20" minlength="2" id="prenom"></br>
+                    </br>
+                    <label class="font" for="nom">Nom:</label>
+                    <input type="text" name="nom" placeholder="Entrez votre nom" maxlength="20" minlength="2" id="nom"></br>
+                    </br>
+                    <label class="font" for="email">Email:</label>
+                    <input type="email" name="mail" placeholder="Votre adresse email" id="email"></br>
+                    </br>
+                    <label class="font" for="pic">Mon CV</label>
+                    <input type="file" accept=".doc, .docx, .odt, .pdf" name="pic" id="pic"></br>
+                    <p>(Formats: .doc, .docx, .odt, .pdf) </p>
+                    </br>
+                    <label class="font" for="liste">Sélectionnez la formation et le métier envisagé :</label></br>
+                    <select name="formation" id="formation">
+                        <option value="selectfor">Sélectionnez ici la formation</option>
+                        <option value="tech">Technicien/ne support systèmes et réseaux</option>
+                        <option value="admin">Administrateur/trice infrastructures securisés</option>
+                        <option value="dev">Développeur/euse web</option>
+                        <option value="devmob">Développeur/euse web et mobile</option>
+                        <option value="conc">Concepteur Développeur/euse web</option>
+                        <option value="adminres">Administrateur/trice systèmes et réseaux</option>
+                        <option value="devlog">Développeur/euse log. et appli. métiers</option>
+                        <option value="webdes">Web designer</option>
+                    </select></br>
+                    </br>
+                    <label class="font" for="liste">Sélectionnez le site de formation envisagé :</label></br>
+                    <select name="site" id="site">
+                        <option value="selectfor">Sélectionnez ici le site envisagé</option>
+                        <option value="tlse">Toulouse / Ramonville (31)</option>
+                        <option value="tarbes">Tarbes (65)</option>
+                        <option value="mtpl">Montpellier (34)</option>
+                    </select>
+                    </br>
+                    <textarea name="message" id="" cols="60" rows="10" placeholder="Votre message"></textarea></br>
+                    <input type="submit" value="Envoyer">
+            </article>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <button type='button' class='social_media'><i class="fab fa-twitter"></i></button>
+                <button type='button' class='social_media'><i class="fab fa-linkedin-in"></i></button>
+                <button type='button' class='social_media'><i class="fab fa-vimeo-v"></i></button>
+                <p>2021 Tp Html Css. Jonathan Vincent Fabien</p>
+                <a href='#header'><button type='button'><i class="fas fa-angle-double-up"></i></button></a>
+            </div>
+        </footer>
+    </body>
+    <script src='script.js'></script>
+</html>

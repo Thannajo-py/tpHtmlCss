@@ -5,6 +5,7 @@ body {
     background-image: url('images/jsbg.jpg');
     background-attachment: fixed;
     background-size: cover;
+    font-family:sans-serif;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -20,7 +21,7 @@ section > article:nth-of-type(odd){
     background-color:rgba(128, 128, 128, 0.74);
 }
 section > article:nth-of-type(even){
-    background-color:rgba(204, 204, 204, 0.74);
+    background-color:rgba(98, 98, 98, 0.74);
 }
 
 header{
@@ -200,6 +201,9 @@ section > article:hover p {
 .function{
     color:#2566CB;
 }
+.text {
+    color:#C3915B;
+}
 article {
     padding: 5px;
     margin: 5px;
@@ -207,6 +211,12 @@ article {
 }
 
 @media only screen and (max-width:1024px){
+    article > div {
+        flex-direction:column;
+    }
+    article > div > img {
+        max-width: 100%;
+    }
     body{
         display: flex;
         flex-direction: column;
@@ -217,10 +227,7 @@ article {
         grid-template-rows: 1;
 
     }
-        .pic{
-            grid-column: 1;
-            grid-row: 1;
-        }
+
 
         article > div {
             flex-direction:column;
@@ -287,4 +294,42 @@ nav{
                 width: 10vh;
                 height: 10vh;
             }
+        }
+
+.solve{
+    width:15px;
+}
+#solve_4, #solve_5{
+    width:40px;
+}
+
+.answer {
+    text-align: center;
+}
+
+.numeric {
+    color:#B5CE89;
+}
+.call{
+    color:#D0DC8B;
+}
+
+.button {
+    padding-left:150px;
+}
+.button > button {
+    background-color:#222222;
+    color:#f5f5f5;
+    border-radius: 20px;
+}
+
+.pic{
+    grid-column: 1;
+    grid-row: 1;
+}
+@media only screen and (max-width:500px){
+    .button{
+        padding-left: 0%;
+        text-align:center;
+    }
 }

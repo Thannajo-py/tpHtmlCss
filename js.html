@@ -2,10 +2,8 @@
 <html lang='fr'>
     <head>
         <meta charset='utf-8' />
-        <title>js? c'est quoi?</title>
+        <title>JS | Adrar Numérique</title>
         <link rel='stylesheet' href='style.css' />
-        <link rel='stylesheet' href='js.css' />
-        <!-- <link rel='stylesheet' href='basic.css'/> -->
         <script src="https://kit.fontawesome.com/51869bbcae.js" crossorigin="anonymous"></script>
         
     </head>
@@ -15,7 +13,6 @@
             <div>
                 <img src="images/banner.png" alt="Bannière Adrar">
             </div>
-
                 <!-- <strong>Bienvenue sur le site du pôle numérique de L'adrar</strong> -->
         </header>
         <div class="nav_bar">
@@ -72,14 +69,65 @@
             </article>
             <article>
                 <h3>javascript en quelques exemples</h3>
+                <div>
                     <div>
-                        <div>
-                            <p>
-                                Comme tous les langages, javascript utilise une série de mots-clés pour des variables, des consignes et des fonctions... Parmi eux nous allons nous intéresser à celles fondamentale: <code><span class='instruction'>if</span>/<span class='instruction'>else</span>,<span class='instruction'>for</span>/<span class='instruction'>while</span>,<span class='true_false'>let</span>/<span class='true_false'>const</span>. </code>
-                            </p>
+                        <p>
+                            Comme tous les langages, javascript utilise une série de mots-clés pour des variables, des consignes et des fonctions... Parmi eux nous allons nous intéresser à celles fondamentales: <code><span class='instruction'>if</span>,<span class='instruction'>for</span>/<span class='instruction'>while</span>,<span class='true_false'>let</span>/<span class='true_false'>const</span>. </code>
+                        </p>
+                        <p><code><span class='instruction'>if</span></code>:représente une condition</p>
+                        <p><code><span class='instruction'>for</span></code>:représente une boucle déterminée(action qui se répète)</p>
+                        <p><code><span class='instruction'>while</span></code>:représente une boucle indéterminée</p>
+                        <p><code><span class='instruction'>let</span></code>:assigne une variable</p>
+                        <p><code><span class='instruction'>const</span></code>:assigne une constante</p>
+                        <p>
+                            Mais illustrons cela par des exemples:
+                        </p>
+                        <div id='code'>
+                            <p>Complétez l'exemple ci-dessous en créant une variable:</p>
+                            <pre><code>
+    <input type='text' class='solve' id='solve_3' maxlength="3"><span class='variable'>x</span> = <span class='numeric'>0</span>;</code></pre>
+                                <p id='answer_3' class='answer'></p>
+                            <div class='button'>
+                                <button type='button' id='validate_3'>Validez</button>
+                            </div>
+                            <p>Complétez l'exemple ci-dessous en créant une constante:</p>
+                            <pre><code>
+    <input type='text' class='solve' id='solve_4' maxlength="5"><span class='variable'>x</span> = <span class='numeric'>0</span>;</code></pre>
+                                <p id='answer_4' class='answer'></p>
+                            <div class='button'>
+                                <button type='button' id='validate_4'>Validez</button>
+                            </div>
+                            <p>Complétez l'exemple ci-dessous en empéchant les envahisseurs d'entrer:</p>
+                            <pre><code>
+    <input type='text' class='solve' id='solve_1' maxlength="2">(<span class='variable'>name</span> == <span class='text'>'ennemi'</span>){
+        <span class='variable'>close_door</span> = <span class='true_false'>true</span>;
+    }</code></pre>
+                            <p id='answer_1' class='answer'></p>
+                            <div class='button'>
+                                <button type='button' id='validate_1'>Validez</button>
+                            </div>
+                            <p>Complétez l'exemple ci-dessous en attaquant le troll 10 fois:</p>
+                            <pre><code>
+    <input type='text' class='solve' id='solve_2' maxlength="3">(<span class='function'>i</span> = <span class='numeric'>0</span>; <span class='function'>i</span> &#139 <span class='numeric'>10</span>; <span class='variable'>i</span>++){
+        <span class='call'>Attack_troll</span>();
+    }</code></pre>
+                                <p id='answer_2' class='answer'></p>
+                            <div class='button'>
+                                <button type='button' id='validate_2'>Validez</button>
+                            </div>
+                            <p>Complétez l'exemple ci-dessous en attaquant le troll sans discontinuer:</p>
+                            <pre><code>
+    <input type='text' class='solve' id='solve_5' maxlength="5">(<span class='true_false'>true</span>){
+        <span class='call'>Attack_troll</span>();
+    }</code></pre>
+                                <p id='answer_5' class='answer'></p>
+                            <div class='button'>
+                                <button type='button' id='validate_5'>Validez</button>
+                            </div>
                         </div>
-                            <img src='images/code.png' alt='javascript symbol' />
                     </div>
+                        <img src='images/code.png' alt='javascript symbol' />
+                </div>
             </article>
         </section>
         <footer>
