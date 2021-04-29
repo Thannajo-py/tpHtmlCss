@@ -213,7 +213,7 @@ article {
     margin: 5px;
     border-radius: 20px 0px 20px 0px;
 }
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1024px){
     article > div {
         flex-direction:column;
     }
@@ -241,7 +241,7 @@ article {
 }
 
 .button {
-    text-align:center;
+    padding-left:200px;
 }
 .button > button {
     background-color:#222222;
