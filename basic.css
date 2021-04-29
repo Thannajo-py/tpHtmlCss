@@ -2,9 +2,11 @@ body {
     display:grid;
     grid-template-columns: 1fr 8fr;
     grid-template-rows: 2fr auto 1fr;
-    background-image: url('jsbg.jpg');
+    background-image: url('images/jsbg.jpg');
     background-attachment: fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 p, button{
     color:#222222;
@@ -25,34 +27,84 @@ header {
     justify-content:center;
     align-items: center;
     columns: 2 / 1;
-    background-image: url(server.jpg);
+    background-image: url(images/server.jpg);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
 }
-header > h1 {
-    text-align:center; 
-    
-}
+    header > h1 {
+        text-align:center; 
+        
+    }
+
 nav{
-    display:flex;
-    flex-direction: column;
-    grid-column: 1;
-    grid-row: 2;
-    
+    background-color: none;
 }
-nav > div {
-    position:sticky;
-    display:flex;
-    flex-direction: column;
+    nav ul{ 
+        display: flex;                
+        margin: 0;
+        padding: 0;
 
+    }
+    nav li{
+        list-style-type: none;
+
+    }
+    nav li img{
+        width: 10vh;
+        height: 10vh;
+    }
+
+footer{
+    background-color: indigo;
 }
 
-nav > div > button {
-    background: orange;
-    height: 10vh;
-    
+.contentArticle{
+    background-color: rgb(200, 200, 200);
 }
+    article:nth-child(even){
+        background-color: rgb(175, 175, 175);
+        padding: 0.5%;
+    }
+
+@keyframes anim_nav_bar{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+    .nav_bar{
+        grid-column: 1 / 2;
+        grid-row: 2 / auto;
+        text-align: center;
+        display: block;
+        animation: anim_nav_bar 0.5s;
+    }
+        nav{
+            position: sticky;
+            top: 0;
+            margin: 0% 2% 2% 0;
+        }
+            nav ul{
+                display: flex;
+                flex-direction: column;
+                min-height: auto;
+                max-width: 25%;
+            }
+            nav ul li{
+                background-color: rgba(128, 128, 128, 0.2);
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            nav ul li:first-child{
+                margin-top: 0;
+            }
+            nav ul li:last-child{
+                margin-bottom: 0;
+            }
+
 section {
     grid-column: 2;
     grid-row: 2;
