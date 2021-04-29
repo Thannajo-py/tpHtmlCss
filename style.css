@@ -7,6 +7,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 p, button{
     color:#222222;
@@ -22,34 +23,27 @@ section > article:nth-of-type(even){
     background-color:rgba(204, 204, 204, 0.74);
 }
 
-/* header {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    columns: 2 / 1;
-    background-image: url(images/server.jpg);
-    background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-}
-    header > h1 {
-        text-align:center; 
-        
-    }
-.pic{
-    grid-column: 1 ;
-    grid-row: 1 ;
-    padding: 3%;
-}
-    */
-
 header{
     grid-column: 1 /span 2;
     grid-row: 1;
 }
- header div img{
-     width: 100%;
- }
+header div img{
+    width: 100%;
+}
+
+footer{
+    background-color: indigo;
+}
+
+.contentArticle{
+    background-color: rgb(200, 200, 200);
+}
+    article:nth-child(even){
+        background-color: rgb(175, 175, 175);
+        padding: 0.5%;
+    }
+
+
 nav{
     background-color: none;
 }
@@ -66,18 +60,6 @@ nav{
     nav li img{
         width: 10vh;
         height: 10vh;
-    }
-
-footer{
-    background-color: indigo;
-}
-
-.contentArticle{
-    background-color: rgb(200, 200, 200);
-}
-    article:nth-child(even){
-        background-color: rgb(175, 175, 175);
-        padding: 0.5%;
     }
 
 @keyframes anim_nav_bar{
@@ -97,8 +79,8 @@ footer{
     }
         nav{
             position: sticky;
-            top: 0;
-            margin: 0% 2% 2% 0;
+            top: 10%;
+            margin: 10%;
         }
             nav ul{
                 display: flex;
@@ -107,7 +89,6 @@ footer{
                 max-width: 25%;
             }
             nav ul li{
-                background-color: rgba(128, 128, 128, 0.2);
                 margin-top: 5%;
                 margin-bottom: 5%;
             }
@@ -117,6 +98,11 @@ footer{
             nav ul li:last-child{
                 margin-bottom: 0;
             }
+            nav li img{
+                width: 10vh;
+                height: 10vh;
+            }
+        
 
 section {
     grid-column: 2;
@@ -219,6 +205,7 @@ article {
     margin: 5px;
     border-radius: 20px 0px 20px 0px;
 }
+
 @media only screen and (max-width:1024px){
     body{
         display: flex;
@@ -235,18 +222,69 @@ article {
             grid-row: 1;
         }
 
-
-
-    footer{
-    }
-    .navbar{
-    }
-    section{
-    }
         article > div {
             flex-direction:column;
         }
         article > div > img {
             max-width: 100%;
         }
+
+nav{
+    background-color: none;
+}
+    nav ul{ 
+        display: flex;                
+        margin: 0;
+        padding: 0;
+
+    }
+    nav li{
+        list-style-type: none;
+
+    }
+    nav li img{
+        width: 10vh;
+        height: 10vh;
+    }
+
+@keyframes anim_nav_bar{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+    .nav_bar{
+        grid-column: 1 / 2;
+        grid-row: 2 / auto;
+        text-align: center;
+        display: block;
+        animation: anim_nav_bar 0.5s;
+    }
+        nav{
+            position: sticky;
+            top: 10%;
+            margin: 10%;
+        }
+            nav ul{
+                display: flex;
+                flex-direction: row;
+                min-height: auto;
+                max-width: 25%;
+            }
+            nav ul li{
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            nav ul li:first-child{
+                margin-top: 0;
+            }
+            nav ul li:last-child{
+                margin-bottom: 0;
+            }
+            nav li img{
+                width: 10vh;
+                height: 10vh;
+            }
 }
