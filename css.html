@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='fr'>
+    <head>
+        <meta charset='utf-8' />
+        <title>CSS | Adrar Numérique</title>
+        <link rel='stylesheet' href='basic.css' />
+        <link rel='stylesheet' href='js.css' />
+        <script src="https://kit.fontawesome.com/51869bbcae.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <img src="images/index.png" alt="adrar" class="pic" /> 
+        <header id='header'>
+            <div class="container">          
+                <h1>
+                    <strong>Bienvenue sur le site du pôle numérique de L'adrar</strong>
+                </h1>
+            </div>
+        </header>
+        <div class="nav_bar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"><img src="images/home.svg" alt="Accueil" /></a>
+                    </li>
+                    <li>
+                        <a href="html.html"><img src="images/html5c.svg" alt="Logo HTML5" /></a>
+                    </li>
+                    <li>
+                        <a href="css.html"><img src="images/css_color.svg" alt="Logo CSS" /></a>
+                    </li>
+                    <li>
+                        <a href="js.html"><img src="images/js.svg" alt="Logo JavaScript" /></a>
+                    </li>
+                    <li>
+                        <a href="api.html"><img src="images/api.svg" alt="Les API" /></a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><img src="images/contact.svg" alt="Nous contacter" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <h2 id="js_title">Les enjeux du CSS</h2>
+            <article>
+                <h3>Présentation du CSS</h3>
+                <div>
+                    <img src="./images/CSS.png" alt="css">
+                    <p>Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. Les standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les navigateurs web dans les années 2000.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Séparation entre la structure et la présentation</h3>
+                <div>                    
+                    <p>L'un des objectifs majeurs des CSS est de permettre la mise en forme hors des documents. Il est par exemple possible de ne décrire que la structure d'un document en HTML, et de décrire toute la présentation dans une feuille de style CSS séparée. Les styles sont appliqués au dernier moment, dans le navigateur web des visiteurs qui consultent le document. Cette séparation fournit un certain nombre de bénéfices, permettant d'améliorer l'accessibilité, de changer plus facilement de présentation, et de réduire la complexité de l'architecture d'un document.</br>
+                    </br>Ainsi, les avantages des feuilles de style sont multiples :</p></br>
+                    </br>
+                    <ul>
+                        <li>La structure du document et la présentation peuvent être gérées dans des fichiers séparés ;</li>
+                        <li>La conception d'un document se fait dans un premier temps sans se soucier de la présentation, ce qui permet d'être plus efficace ;</li>
+                        <li>Dans le cas d'un site web, la présentation est uniformisée : les documents (pages HTML) font référence aux mêmes feuilles de styles. Cette caractéristique permet de plus une remise en forme rapide de l'aspect visuel ;</li>
+                        <li>Un même document peut donner le choix entre plusieurs feuilles de style, par exemple une pour l'impression et une pour la lecture à l'écran. Certains navigateurs web permettent au visiteur de choisir un style parmi plusieurs ;</li>
+                        <li>Le code HTML est considérablement réduit en taille et en complexité, puisqu'il ne contient plus de balises ni d'attributs de présentation.</li>
+                    </ul>
+                    <img src="./images/csslego.jpg" alt="lego">
+                </div>
+            </article>
+            <article>
+                <h3>Cascade des styles</h3>
+                <div>
+                    <img src="./images/cascade.jpg" alt="cascade">
+                    <p>La « cascade » est la combinaison de différentes sources de styles appliqués à un même document, selon leur degré respectif de priorité. Différents modes de cascade peuvent se combiner :</p></br>
+                    <ul>
+                        <li>par origine des styles, issus de l'agent utilisateur, de l'auteur et de l'utilisateur. La priorité supérieure accordée aux styles de l'utilisateur est un des facteurs principaux de l'accessibilité des documents présentés à l'aide de CSS ;</li>
+                        <li>par média : une feuille de style générique peut s'appliquer à plusieurs média de restitution (affichage à l'écran, impression, projection) et être combinée avec des feuilles propres à chaque média ;</li>
+                        <li>selon l'architecture d'un ensemble de documents web : une feuille de style générique peut s'appliquer à la totalité des pages d'un site web, être combinée avec des feuilles propres à chaque rubrique de celui-ci, ainsi qu'avec des styles propres à telle ou telle page spécifique ;</li>
+                        <li>selon l'architecture des feuilles elles-mêmes : une feuille de style externe au document peut être combinée à une feuille de style interne et à des styles appliqués directement à chaque élément qui le compose (styles « en ligne »). Une feuille de style peut également importer une ou plusieurs autres feuilles externes.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div>
+                <button type='button' class='social_media'><i class="fab fa-twitter"></i></button>
+                <button type='button' class='social_media'><i class="fab fa-linkedin-in"></i></button>
+                <button type='button' class='social_media'><i class="fab fa-vimeo-v"></i></button>
+                <p>2021 Tp Html Css. Jonathan Vincent Fabien</p>
+                <a href='#header'><button type='button'><i class="fas fa-angle-double-up"></i></button></a>
+            </div>
+        </footer>
+    </body>
+    <script src='script.js'></script>
+</html>
